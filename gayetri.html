@@ -1,0 +1,21 @@
+<!-- //create a webpage that changes the background color based on user input using -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>change background colour</title>
+</head>
+<body>
+    <input type="text" id="color" placeholder="#FFFFFF">
+    <br><br>
+    <button onclick="changeColor()">change Color</button>
+    <script>
+    function changeColor()
+    {
+        var color = document.getElementById('color').value;
+        var body = document.getElementsByTagName('body')[0];
+        body.style.backgroundColor=color;
+    }
+    </script>
+
+</body>
+</html>
